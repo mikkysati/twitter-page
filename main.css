@@ -1,0 +1,150 @@
+body {
+  background-color: #F2EEE8; }
+
+.fa:hover {
+  color: #80A8CC;
+  cursor: pointer; }
+
+/* header related CSS */
+.fa-twitter {
+  font-size: 32px;
+  color: #80A8CC; }
+
+.header {
+  margin: 0 0 25px 0;
+  background: #FFFBF5; }
+  .header nav {
+    text-align: center; }
+
+.header-left-icons {
+  display: inline-block;
+  float: left;
+  height: 70px; }
+  .header-left-icons a {
+    display: inline-block;
+    margin: 0px 15px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px #F1EDE6 solid; }
+    .header-left-icons a i {
+      color: #605E58;
+      font-size: 12px;
+      padding-top: 10px;
+      font-weight: bold; }
+  .header-left-icons a:hover {
+    border-color: #80A8CC; }
+    .header-left-icons a:hover i {
+      color: #80A8CC; }
+  .header-left-icons div {
+    display: inline-block;
+    padding-top: 20px;
+    height: 50px; }
+
+#tweet-feather {
+  border: none;
+  background: #80A8CC;
+  margin-left: 20px;
+  margin-right: 20px; }
+  #tweet-feather i, #tweet-feather i:hover {
+    color: #FFFBF5; }
+
+.middle-icon {
+  display: inline-block; }
+
+.search-input {
+  display: inline-block;
+  position: relative; }
+  .search-input input {
+    background: #FFFBF5;
+    border-radius: 40px;
+    border: 1px #F1EDE6 solid; }
+  .search-input input:focus {
+    outline: none; }
+  .search-input i {
+    position: absolute;
+    top: 9px;
+    right: 12px;
+    font-size: 15px;
+    color: #5F6778; }
+  .search-input i:hover {
+    color: #5F6778;
+    cursor: auto; }
+
+img {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%; }
+
+/* TAB CSS*/
+.tab-container {
+  margin: 25px 25% 25px 25%;
+  width: calc(50% + 30px);
+  background: #FFFBF5;
+  cursor: pointer; }
+  .tab-container div {
+    padding: 15px 0;
+    width: 24%;
+    display: inline-block;
+    text-align: center; }
+
+.top-tab {
+  color: #C6C1B0; }
+
+.bottom-tab {
+  color: #605E58;
+  font-weight: bold; }
+
+/* main content CSS*/
+.content {
+  margin: 25px 25% 25px 25%;
+  background: #FFFBF5;
+  padding: 0;
+  width: calc(50% + 30px); }
+
+.tweet-container {
+  border-bottom: 1px #F1EDE8 solid;
+  padding: 32px;
+  padding-bottom: 24px; }
+
+.content-left {
+  display: inline-block;
+  float: left;
+  width: calc(5% + 10px);
+  padding-right: 20px; }
+  .content-left img {
+    height: 48px;
+    width: 48px; }
+
+.conten-right {
+  display: inline-block;
+  width: calc(95% - 40px); }
+  .conten-right div div {
+    display: inline-block; }
+
+.icon-container {
+  margin-top: 10px; }
+  .icon-container div {
+    display: block; }
+  .icon-container .icon-right {
+    float: right; }
+
+.time, .icon-right {
+  float: right; }
+
+.icon-left i {
+  margin: 0 10px; }
+.icon-left .fa-reply {
+  margin-left: 0px; }
+
+.name {
+  color: #57575F;
+  font-weight: bold; }
+
+.icon-left, .icon-right, .time, .username {
+  color: #C6C1B0; }
+
+.tweet-content {
+  color: #605E58; }
+
+/*# sourceMappingURL=main.css.map */

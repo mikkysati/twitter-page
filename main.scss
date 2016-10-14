@@ -1,0 +1,195 @@
+$grey: #F2EEE8;
+$white: #FFFBF5;
+$blue: #80A8CC;
+
+body { 
+    background-color:$grey;
+}
+
+.fa:hover {
+    color: $blue;
+    cursor: pointer;
+}
+
+/* header related CSS */
+.fa-twitter {
+    font-size: 32px;
+    color: $blue;
+}
+
+.header {
+    margin: 0 0 25px 0;
+    background: $white;
+    nav {
+        text-align: center;
+    }
+}
+
+.header-left-icons {
+    display: inline-block;
+    float: left;
+    height: 70px;
+    a {
+        display: inline-block;
+        margin: 0px 15px; 
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        border: 1px #F1EDE6 solid;
+        i {
+            color: #605E58;
+            font-size: 12px;
+            padding-top: 10px;
+            font-weight: bold;
+        }
+    }
+    a:hover {
+        border-color: $blue;
+        i {
+            color: $blue;
+        }
+    }
+    div {
+        display: inline-block;
+        padding-top: 20px;
+        height: 50px;
+    }
+}
+
+#tweet-feather {
+    border: none;
+    background: $blue;
+    margin-left: 20px;
+    margin-right: 20px;
+    i, i:hover {
+        color: $white;
+    }
+}
+
+.middle-icon {
+    display: inline-block;
+}
+
+.search-input {
+    display: inline-block;
+    position: relative;
+    input {
+        background: #FFFBF5;
+        border-radius: 40px;
+        border: 1px #F1EDE6 solid;
+    }
+    input:focus {
+        outline: none;
+    }
+    i {
+        position: absolute;
+        top: 9px;
+        right: 12px;
+        font-size: 15px;
+        color: #5F6778;
+    }
+    i:hover {
+       color: #5F6778;
+        cursor: auto;
+    }
+}
+
+img {
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+}
+
+/* TAB CSS*/
+
+.tab-container {
+    margin: 25px 25% 25px 25%;
+    width: calc(50% + 30px);
+    background: $white;
+    cursor: pointer;
+    div {
+        padding: 15px 0;
+        width: 24%;
+        display: inline-block;
+        text-align: center;
+    }
+}
+
+.top-tab {
+    color: #C6C1B0;
+}
+
+.bottom-tab {
+    color: #605E58;
+    font-weight: bold;
+}
+
+/* main content CSS*/
+
+.content {
+    margin: 25px 25% 25px 25%;
+    background: $white;
+    padding: 0;
+    width: calc(50% + 30px);       
+}
+
+.tweet-container {
+    border-bottom: 1px #F1EDE8 solid;
+    padding: 32px;
+    padding-bottom: 24px;
+}
+
+.content-left {
+    display: inline-block;
+    float: left;
+    width: calc(5% + 10px);
+    padding-right: 20px;
+    img {
+        height: 48px;
+        width: 48px;
+    }
+}
+
+.conten-right {
+    display: inline-block;
+    width: calc(95% - 40px);
+    div {
+        div {
+            display: inline-block;
+        }
+    }
+}
+
+.icon-container {
+    margin-top:10px;
+    div {
+        display: block;
+    }
+    .icon-right {
+        float: right;
+    }
+}
+
+.time, .icon-right {
+    float: right;
+}
+
+.icon-left {
+    i {
+        margin: 0 10px;
+    }
+    .fa-reply {
+        margin-left: 0px;
+    }
+}
+.name {
+    color: #57575F;
+    font-weight: bold;
+}
+.icon-left, .icon-right, .time, .username {
+    color: #C6C1B0;
+}
+.tweet-content {
+    color: #605E58;
+}
+

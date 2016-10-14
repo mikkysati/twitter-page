@@ -1,0 +1,67 @@
+<html ng-app="notesApp">
+<head>
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="https://unpkg.com/basscss@7.1.1/css/basscss.min.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+</head>
+<body ng-controller="MainCtrl as mainCtrl">
+  <div class="header">
+      <nav class="clearfix grey">
+          <div class="header-left-icons">
+            <div style="border-right: 1px #F1EDE6 solid;"><a href="/" id="tweet-feather"><i class="fa fa-envira" aria-hidden="true"></i></a></div>
+            <div><a href="/"><i class="fa fa-paint-brush" aria-hidden="true"></i></a></div>
+            <div><a href="/"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></div>
+            <div style="border-bottom: 1px #80A8CC solid;"><a href="/"><i class="fa fa-hashtag" aria-hidden="true"></i></a></div>
+          </div>
+          <div class="middle-icon">
+            <a href="/" class="btn py2"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </div>
+          <div class="sm-col-right">
+            <div class="search-input">
+                <input type="text" placeholder="Search"><i class="fa fa-search" aria-hidden="true"></i></div>
+            <a href="/" class="btn py2"><img src="img/uthappizza.jpg"></a>
+          </div>
+      </nav>
+  </div>
+    
+  <div class="tab-container">
+      <div style="border-bottom:5px #80A8CC solid"><span class="top-tab">TWEETS</span><br><span class="bottom-tab">200</span></div>
+      <div><span class="top-tab">PHOTOS/VIDEOS</span><br><span class="bottom-tab">200</span></div>
+      <div><span class="top-tab">FOLLOWING</span><br><span class="bottom-tab">200</span></div>
+      <div><span class="top-tab">FOLLOWERS</span><br><span class="bottom-tab">1M</span></div>
+  </div>
+    
+  <div class="content">
+      <div ng-repeat="data in mainCtrl.data" class="tweet-container">
+          <div class="content-left">
+              <img ng-src="{{data.avator}}">
+          </div>
+          <div class="conten-right">
+              <div>
+                  <div class="name">{{data.name}}</div>
+                  <div class="username">@{{data.username}}</div>
+                  <div class="time">{{data.time}}</div>
+              </div>
+              <div class="tweet-content">
+                  {{data.tweet}}
+              </div>
+              <div class="icon-container">
+                  <div class="icon-left">
+                      <i class="fa fa-reply" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-refresh" aria-hidden="true"></i>
+                      <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                  </div>
+                  <div class="icon-right">
+                      <i class="fa fa-expand" aria-hidden="true"></i>
+                  </div>
+          </div>
+          </div>
+      </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
